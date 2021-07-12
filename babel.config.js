@@ -1,11 +1,14 @@
 module.exports = {
   presets: [
-    // Permite que o babel escolha a melhor opção de conversão
-    // de acordo com o ambiente onde está sendo executado
+    // Allows Babel to choose the best conversion option
+    // according to the environment where it is being executed
     "@babel/preset-env",
 
-    // Permite que o babel entenda a sintaxe do React, o JSX não é um tipo de arquivo
-    // que o browser entenderia, então isso possibilita do babel entender a sintaxe
+    // Allows Babel to understand React syntax, JSX is not a file type
+    // that the browser would understand, then this enables Babel to understand the syntax
     "@babel/preset-react",
+
+    // Allowing use of typscript in the project
+    "@babel/preset-typescript",
   ],
 };
