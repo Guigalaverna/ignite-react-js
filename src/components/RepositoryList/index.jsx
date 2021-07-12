@@ -1,6 +1,8 @@
 import React from "react";
 import RepositoryItem from "../RepositoryItem";
 
+import "./styles.scss";
+
 function RepositoryList() {
   return (
     <section className="repository-list">
