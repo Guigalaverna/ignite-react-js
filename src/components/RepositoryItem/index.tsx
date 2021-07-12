@@ -1,6 +1,14 @@
 import React from "react";
 
-function RepositoryItem({ repository }) {
+type RepositoryItemProps = {
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  };
+};
+
+function RepositoryItem({ repository }: RepositoryItemProps) {
   return (
     <li>
       <strong>{repository.name}</strong>
